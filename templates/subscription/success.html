@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Success{% endblock %}
+{% load static tailwind_tags %}
+{% block content %}
+    <div class="flex h-screen justify-center items-center bg-CharcoalGray">
+        <div class="w-1/2">
+            <div class="bg-white p-6 rounded-xl pb-4 ">
+                <span class="mt-4  rounded-full bg-Tomato">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                </span>
+                <h1 class="font-bold text-3xl text-DarkSlateGray font-Roboto pt-4 pb-4">Thanks for Subscribing!</h1>
+                <p class="font-Roboto">A confrmation email has been sent to <span class="font-bold">{{email}}</span>
+                    please open it and click on the link to confirm your subscription.
+                </p>
+                <a href="{% url 'home' %}">
+                    <button class="p-4 bg-Tomato mt-4 font-Roboto text-white text-center rounded-md">Dismiss Message</button>
+                </a>
+            </div>
+        </div>
+    </div> 
+{% endblock %}
