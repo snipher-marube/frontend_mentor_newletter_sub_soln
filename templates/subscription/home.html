@@ -8,22 +8,22 @@
         <!--left part start-->
         <div class=" md:w-1/2 justify-center items-center p-6">
             <h1 class="font-bold font-Roboto text-3xl pb-6">Stay Updated!</h1>
-            <p class="text-CharcoalGray pb-4">Join 60,000+ product managers receiving monthly updates on:</p>
+            <p class="text-CharcoalGray pb-4 font-Roboto">Join 60,000+ product managers receiving monthly updates on:</p>
             <div>
                 <ul>
-                    <li class="flex gap-x-4 pb-2 text-CharcoalGray text-sm">
+                    <li class="flex gap-x-4 pb-2 text-CharcoalGray text-sm font-Roboto">
                         <span class="w-5 h-5 rounded-full bg-Tomato">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                         </span>
                         Product discovery and building what matters
                     </li>
-                    <li class="flex gap-x-4 pb-2 text-CharcoalGray text-sm">
+                    <li class="flex gap-x-4 pb-2 text-CharcoalGray text-sm font-Roboto">
                         <span class="w-5 h-5 rounded-full bg-Tomato">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                         </span>
                         Measuring to ensure updates are a success
                     </li>
-                    <li class="flex gap-x-4 pb-6  text-CharcoalGray text-sm">
+                    <li class="flex gap-x-4 pb-6  text-CharcoalGray text-sm font-Roboto">
                         <span class="w-5 h-5 rounded-full bg-Tomato">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
                         </span>
@@ -34,9 +34,9 @@
             <form action="{% url 'subscribe' %}" method="POST">
                 {% csrf_token %}
                 <label class="block">
-                    <span class="block font-bold text-DarkSlateGray">Email Address:</span>
+                    <span class="block font-Roboto font-bold text-DarkSlateGray">Email Address:</span>
                     <input type="email" name="email" class="peer w-full rounded-lg p-2 border-1 text-CharcoalGray border-Grey" placeholder="email@company.com"/>
-                    <p class="mt-2 invisible peer-invalid:visible text-Tomato text-sm">
+                    <p class="mt-2 font-Roboto invisible peer-invalid:visible text-Tomato text-sm">
                       Please provide a valid email address.
                     </p>
                 </label>
