@@ -9,7 +9,7 @@ def home(request):
     return render(request, 'subscription/home.html', context)
 
 def subscribe(request):
-    form = SubscriptionForm()
+    '''form = SubscriptionForm()
     if request.method == 'POST':
         form = SubscriptionForm(request.POST)
         if form.is_valid():
@@ -21,4 +21,7 @@ def subscribe(request):
             return render(request, 'subscription/success.html',  {'email': email})
         else:
             return render(request, 'subscription/home.html', {'form': form})
-    
+    '''
+
+    # uncomment the above code and comment the below code to use the form
+    return render(request, 'subscription/success.html')
