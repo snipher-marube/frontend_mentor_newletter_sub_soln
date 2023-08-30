@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Newsletter sign-up form with success message coding challenge](https://github.com/snipher-marube/frontend_mentor_newletter_sub_soln/blob/main/static/design/desktop-preview.jpg?raw=true)
 
 ## Welcome! 👋
 
